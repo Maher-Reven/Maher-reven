@@ -105,7 +105,7 @@
   <div>
     <div id="quote2021">
       <i>
-       “It’s hard enough to find an error in your code when you’re looking for it; it’s even harder when you’ve assumed your code is error-free.” – Steve McConnell
+       “It’s hard enough to find an error in your code when you’re looking for it; it’s even harder when you’ve assumed your code is error-free.” – Steve McConnell 
       </i>
     </div>
     <br/>
