@@ -98,7 +98,7 @@
 
 <details>
   <summary>
-    💬 Inspirational quotes that keep me motivated to code: 
+    💬 Inspirational quotes that keep me motivated to code:
   </summary>
   <br/>
   <div>
