@@ -67,9 +67,8 @@
   </div>
   <div>
    <a href=https://www.linkedin.com/in/maherskrde/ target="_blank"><img align="center" src=https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg alt="maher-reven" height="20" width="20" /></a>
-</p>
-
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=maher-reven" alt="maher-reven" /> <img src="https://wakatime.com/badge/user/2b7f1103-4a86-4ff2-a29a-35149552af7c.svg" alt="Code Time" /> <img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="maher-reven" /> <img src="https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github" alt="open source"/>
+   </p>
+ <img src="https://wakatime.com/badge/user/2b7f1103-4a86-4ff2-a29a-35149552af7c.svg" alt="Code Time" /> <img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="maher-reven" /> <img src="https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github" alt="open source"/>
   </div>
 </details>
 
