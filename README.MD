@@ -94,6 +94,7 @@
         </div>
      </div>
   </div>
+  <p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=maher-reven&layout=compact&theme=algolia" alt="maher-reven" /></a> </p>
    <br/>
     <br/>
    <div>
@@ -126,9 +127,8 @@
       </i>
     </div>
     <br/>
-    <div align="right">
-      <img src="./assets/finnAndJakePixelArt.gif" width="270px" height="145.4px"/>
-    </div>
+    <p align="center">
+   <img src="https://github.com/akshitagupta15june/akshitagupta15june/blob/output/github-contribution-grid-snake.svg" alt="snake"></center>
   </div>
 </details>
                                                           
