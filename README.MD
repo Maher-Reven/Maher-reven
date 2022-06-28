@@ -72,6 +72,7 @@
   <br/>
   <div>
      <img src="https://github-readme-stats.vercel.app/api?username=maher-reven&count_private=true&show_icons=true&include_all_commits=true&theme=dark" alt="Maher-reven's Github Stats" />
+     <img src="https://github-readme-stats.vercel.app/api/top-langs?username=maher-reven&langs_count=10&show_icons=true&locale=en&layout=compact&theme=dark" alt="maher-reven" width="350"/>
      &nbsp;
      <img src="https://github-readme-stats.vercel.app/api?username=moesi88&count_private=true&show_icons=true&include_all_commits=true&theme=dark" alt="moesi88's Github Stats" />
      &nbsp;
@@ -84,7 +85,6 @@
           </a>
           <img src="./assets/pepe-dance.gif" width="60" height="60" />
           </a>
-<a><img align="right" src="https://github-readme-stats.vercel.app/api/top-langs?username=maher-reven&langs_count=10&show_icons=true&locale=en&layout=compact&theme=highcontrast" alt="maher-reven" width="350"/></a>
         </div>
         <div>
           <img src="https://komarev.com/ghpvc/?username=moesi88&color=brightgreen&label=Github Profile Views"/>
@@ -132,10 +132,10 @@
     </div>
     <br/>
   </div>
-  <div>
+</details>
+ <div>
     <p align="center">
    <img src="https://github.com/akshitagupta15june/akshitagupta15june/blob/output/github-contribution-grid-snake.svg" alt="snake"></center>
-  </div>
-</details>
+</div>
                                                           
 <!-- **maher-reven/maher-reven** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile. -->
