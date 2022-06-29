@@ -82,9 +82,9 @@
            &nbsp;
           <a href="https://github.com/maher-reven">
             <img src="https://img.shields.io/github/followers/maher-reven.svg?style=social&label=Follow"/>
-          </a>
-          <img src="./assets/pepe-dance.gif" width="60" height="60" />
-          </a>
+          <!-- </a> -->
+          <!-- <img src="./assets/pepe-dance.gif" width="60" height="60" /> -->
+          <!-- </a> -->
         </div>
         <div>
           <img src="https://komarev.com/ghpvc/?username=moesi88&color=brightgreen&label=Github Profile Views"/>
@@ -92,7 +92,9 @@
           <a href="https://github.com/moesi88">
             <img src="https://img.shields.io/github/followers/moesi88.svg?style=social&label=Follow"/>
           </a>
-          <img src="./assets/pepe-dance.gif" width="60" height="60" />
+          <!-- <a> -->
+          <!-- <img src="./assets/pepe-dance.gif" width="60" height="60" /> -->
+          <!-- </a> -->
         </div>
      </div>
   </div>
