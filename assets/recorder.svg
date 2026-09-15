@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 232" width="1000" height="232" role="img" aria-label="Maher Kurdi — building instrumentation for agents">
+  <title>Maher Kurdi — building instrumentation for agents</title>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#010409"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"    stop-color="#2dd4bf" stop-opacity="0"/>
+      <stop offset="0.18" stop-color="#2dd4bf" stop-opacity="1"/>
+      <stop offset="0.62" stop-color="#60a5fa" stop-opacity="1"/>
+      <stop offset="1"    stop-color="#a78bfa" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"    stop-color="#2dd4bf" stop-opacity="0"/>
+      <stop offset="0.5"  stop-color="#2dd4bf" stop-opacity="0.16"/>
+      <stop offset="1"    stop-color="#2dd4bf" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#7d8590" stroke-opacity="0.10" stroke-width="1"/>
+    </pattern>
+    <clipPath id="clipPanel"><rect x="0" y="0" width="1000" height="232" rx="14"/></clipPath>
+    <clipPath id="clipWave"><rect x="40" y="132" width="920" height="72"/></clipPath>
+    <style>
+      .mono { font-family: ui-monospace,"SFMono-Regular","JetBrains Mono",Menlo,Consolas,monospace; }
+      .name { font-size: 40px; font-weight: 700; fill: #e6edf3; letter-spacing: 1.5px; }
+      .role { font-size: 15px; fill: #7ee7d7; letter-spacing: 0.6px; }
+      .meta { font-size: 12.5px; fill: #7d8590; letter-spacing: 0.4px; }
+      .chip { font-size: 11.5px; fill: #adbac7; letter-spacing: 0.7px; }
+      .rec  { font-size: 12px; fill: #ff7b72; letter-spacing: 1.6px; font-weight: 700; }
+
+      @keyframes blink { 0%,45% { opacity: 1 } 55%,100% { opacity: 0.15 } }
+      .rec-dot { animation: blink 1.6s steps(1,end) infinite; }
+      .rec-txt { animation: blink 1.6s steps(1,end) infinite; }
+
+      @keyframes drift { from { transform: translateX(0) } to { transform: translateX(-480px) } }
+      .trace { animation: drift 9s linear infinite; }
+
+      @keyframes sweepx { from { transform: translateX(-420px) } to { transform: translateX(1060px) } }
+      .sweep { animation: sweepx 7s ease-in-out infinite; }
+
+      /* four real spans, cycled */
+      @keyframes cycle {
+        0%,2%      { opacity: 0 }
+        5%,22%     { opacity: 1 }
+        25%,100%   { opacity: 0 }
+      }
+      .span { font-size: 14px; fill: #d0d7de; opacity: 0; animation: cycle 13.2s ease-in-out infinite; }
+      .s2 { animation-delay: 3.3s } .s3 { animation-delay: 6.6s } .s4 { animation-delay: 9.9s }
+      .tag { font-size: 14px; fill: #7ee7d7; }
+
+      @media (prefers-reduced-motion: reduce) {
+        .rec-dot,.rec-txt,.trace,.sweep { animation: none }
+        .span { animation: none; opacity: 1 }
+        .s2,.s3,.s4 { display: none }
+      }
+    </style>
+  </defs>
+
+  <g clip-path="url(#clipPanel)">
+    <rect width="1000" height="232" fill="url(#panel)"/>
+    <rect width="1000" height="232" fill="url(#grid)"/>
+    <rect class="sweep" x="0" y="0" width="420" height="232" fill="url(#sweep)"/>
+
+    <!-- header rule -->
+    <rect x="40" y="38" width="920" height="1" fill="#30363d"/>
+
+    <!-- recording indicator -->
+    <circle class="rec-dot" cx="48" cy="26" r="5" fill="#ff7b72"/>
+    <text class="mono rec rec-txt" x="62" y="31">REC</text>
+    <text class="mono meta" x="104" y="31">session/maher-kurdi</text>
+
+    <!-- right-hand chips -->
+    <g class="mono chip" text-anchor="end">
+      <text x="960" y="31">NL  ·  @StuDocu  ·  since 2020</text>
+    </g>
+
+    <!-- identity -->
+    <text class="mono name" x="40" y="88">MAHER KURDI</text>
+    <text class="mono role" x="40" y="112">building instrumentation for agents</text>
+
+    <!-- cycling spans (all real repos) -->
+    <g transform="translate(40,140)">
+      <text class="mono span"    x="0" y="0"><tspan class="tag">span </tspan>samsara — deterministic replay + fault injection for LLM agents</text>
+      <text class="mono span s2" x="0" y="0"><tspan class="tag">span </tspan>a11y-render-gate — an accessibility gate inside the agent loop</text>
+      <text class="mono span s3" x="0" y="0"><tspan class="tag">span </tspan>prettier — comment attachment in the JS printer</text>
+      <text class="mono span s4" x="0" y="0"><tspan class="tag">span </tspan>expo — exception plumbing in expo-modules-core</text>
+    </g>
+
+    <!-- waveform trace -->
+    <g clip-path="url(#clipWave)">
+      <g class="trace">
+        <path fill="none" stroke="url(#wave)" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"
+          d="M40 186 L76 186 L88 164 L100 186 L148 186 L160 200 L172 172 L184 186 L244 186 L256 158 L268 190 L280 186 L328 186
+             L340 178 L352 178 L364 186 L412 186 L424 168 L436 196 L448 186 L520 186
+             M520 186 L556 186 L568 164 L580 186 L628 186 L640 200 L652 172 L664 186 L724 186 L736 158 L748 190 L760 186 L808 186
+             L820 178 L832 178 L844 186 L892 186 L904 168 L916 196 L928 186 L1000 186"/>
+      </g>
+      <!-- baseline -->
+      <rect x="40" y="203" width="920" height="1" fill="#21262d"/>
+    </g>
+
+    <!-- footer readout -->
+    <g class="mono meta">
+      <text x="40" y="222">effects recorded · replayable · fork on failure</text>
+    </g>
+    <g class="mono meta" text-anchor="end">
+      <text x="960" y="222">TypeScript · Rust · Swift</text>
+    </g>
+
+    <rect x="0.5" y="0.5" width="999" height="231" rx="14" fill="none" stroke="#30363d"/>
+  </g>
+</svg>
