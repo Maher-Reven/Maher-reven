@@ -27,11 +27,16 @@ Neither a replay log nor a contrast ratio is interested in what the agent claims
 
 | | repo | what | status |
 |:--|:--|:--|:--|
+| `✓` | **airbnb/lottie-ios** | [#2704](https://github.com/airbnb/lottie-ios/pull/2704) — a track matte referenced by `tp` was never decoded, so the matte layer rendered as an ordinary layer — usually a bright helper colour nobody meant to ship — and the layers that wanted it got matted by whatever happened to sit next to them. | merged |
+| `→` | **prettier/prettier** | [#20106](https://github.com/prettier/prettier/pull/20106) — wrapping could move inline HTML to the start of a line, where CommonMark stops reading it as inline. One paragraph quietly became three blocks. | open |
 | `→` | **prettier/prettier** | [#20075](https://github.com/prettier/prettier/pull/20075) — unstable comment attachment on a parenthesized arrow body. Two handlers were fighting over the same comment, so formatting the same file twice gave two different files. | open |
 | `→` | **expo/expo** | [#50215](https://github.com/expo/expo/pull/50215) — `Exception` dropped the description it was created with, so every `promise.reject(code, description)` reached JavaScript as `undefined reason`. | open |
 
-Both were found the same way: reproduce it, then build a differential harness and let it tell you
-how wide the bug actually is. The prettier one turned out to be 208 unstable cases, not 4.
+All four were found the same way: reproduce it, then build a differential harness and let it tell
+you how wide the bug actually is. The arrow-body one turned out to be 208 unstable cases, not 4.
+The HTML one was six of CommonMark's block conditions, not just the comment in the report. The
+lottie fix was checked against both implementations it replaced across all 366 compositions in the
+sample suite before it went up — which is how I knew it wouldn't move a single existing snapshot.
 
 ---
 
@@ -42,7 +47,7 @@ how wide the bug actually is. The prettier one turned out to be 208 unstable cas
 </p>
 
 TypeScript pays the bills. Rust is where the systems work goes. The Swift and Dart at the bottom
-of the bar are 2022 — see the archive.
+of the bar are 2022 — see the archive. The 2026 Swift is upstream, in someone else's repo.
 
 ---
 
